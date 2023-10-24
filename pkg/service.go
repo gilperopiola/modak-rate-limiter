@@ -32,7 +32,7 @@ func (ns *notificationService) Send(notification Notification) error {
 	}
 
 	// Send notification
-	fmt.Printf("%s notification sent to user %s", notification.Type, notification.Recipient)
+	fmt.Printf("%s notification sent to user %s\n\n", notification.Type, notification.Recipient)
 
 	// Add notification date to rate limiter store
 	ns.limiter.AddNotificationDate(notification)

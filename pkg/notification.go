@@ -7,10 +7,13 @@ import (
 type Username string
 type NotifType string
 
-const (
+var (
 	NotifTypeStatus NotifType = "Status"
 	NotifTypeNews   NotifType = "News"
 	NotifTypeMarket NotifType = "Marketing"
+	NotifSlice                = []NotifType{
+		NotifTypeStatus, NotifTypeNews, NotifTypeMarket,
+	}
 )
 
 type Notification struct {
