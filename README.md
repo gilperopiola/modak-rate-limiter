@@ -8,4 +8,6 @@
  - If the notification is sent, its date is stored on the rate limiter for checking later quotas
  - The rate limiter also deletes old dates from the store when it doesn't need them anymore
 
-`Have a nice day!`
+`To start the project just run "go run cmd/main.go"`
+
+**Have a nice day!**

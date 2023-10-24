@@ -1,6 +1,7 @@
 package pkg
 
 import (
+	"math/rand"
 	"time"
 )
 
@@ -21,4 +22,13 @@ type Notification struct {
 	Recipient Username
 	Message   string
 	Date      time.Time
+}
+
+func NewRandomNotification(username Username) Notification {
+	return Notification{
+		Type:      NotifSlice[rand.Intn(len(NotifSlice))],
+		Recipient: username,
+		Message:   ":)",
+		Date:      time.Now(),
+	}
 }
